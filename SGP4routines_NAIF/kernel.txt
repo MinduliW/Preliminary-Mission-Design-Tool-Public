@@ -1,6 +1,6 @@
 \begindata
   PATH_VALUES  = ( 
-  		     '/Users/minduli/Astroscale_ADR/Main/SGP4routines_NAIF'
+  		     'SGP4routines_NAIF'
   		  )
   PATH_SYMBOLS = ( 'A' )
   
