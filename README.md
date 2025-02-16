@@ -14,6 +14,16 @@ Additionally, the code includes a **Matlab app** that allows users to interact w
 
 If you prefer to run the code without using the app, you can use the `main.m` file, where you can directly change the parameters for the mission.
 
+## How PMDT Works
+
+The PMDT utilizes **J2 perturbations** to facilitate changes in the **Right Ascension of Ascending Node (RAAN)** without any fuel cost. This is achieved by having the spacecraft wait in **drift orbits**, leveraging the J2 effect to slowly evolve the RAAN without using propellant.
+
+Changes in **Semi-Major Axis (SMA)** and **Inclination** are handled using the **extended Edelbaum method**, which is discussed in detail in the paper. This method allows the spacecraft to efficiently adjust these orbital elements in a fuel-optimal manner, balancing time and fuel consumption for the mission.
+
+## Link to the paper
+For more details, read the full paper: [Design and guidance of a multi-active debris removal mission](https://link.springer.com/article/10.1007/s42064-023-0159-3)
+
+
 ## Link to the paper
 For more details, read the full paper: [Design and guidance of a multi-active debris removal mission](https://link.springer.com/article/10.1007/s42064-023-0159-3)
 
