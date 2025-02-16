@@ -21,6 +21,11 @@ Additionally, the code includes a **Matlab app** that allows users to interact w
 </p>
 If you prefer to run the code without using the app, you can use the `main.m` file, where you can directly change the parameters for the mission.
 
+## Prerequisites
+
+SPICE toolkit for Matlab (can be downloaded at https://naif.jpl.nasa.gov/naif/toolkit_MATLAB.html) 
+
+
 ## How PMDT Works
 
 The PMDT utilizes **J2 perturbations** to facilitate changes in the **Right Ascension of Ascending Node (RAAN)** without any fuel cost. This is achieved by having the spacecraft wait in **drift orbits**, leveraging the J2 effect to slowly evolve the RAAN without using propellant. Changes in **Semi-Major Axis (SMA)** and **Inclination** are handled using the **extended Edelbaum method**, which is discussed in detail in the paper. This method allows the spacecraft to efficiently adjust these orbital elements in a fuel-optimal manner, balancing time and fuel consumption for the mission. Our follow-up work, titled **["Convex-Optimization-Based Model Predictive Control for Space Debris Removal Mission Guidance"](https://arc.aiaa.org/doi/abs/10.2514/1.G008089?journalCode=jgcd)**, applies **convex-MPC** to track the PMDT-generated trajectories. This paper demonstrates how the PMDT method's high accuracy allows the use of single-iteration convex optimization for real-time guidance of these ADR missions. 
